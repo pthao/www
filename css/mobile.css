@@ -1,1 +1,3 @@
- 
+/*** Include this style file last so that it will override any defined styles. ***/
+/*.ui-content, .ui-page{background: #eee;}*/
+.ui-content{font-size:19px;}	/* Style for data-role="content" */
