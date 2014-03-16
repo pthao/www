@@ -4,6 +4,7 @@ var serviceURL = "http://216.235.70.32/phia/ZendStudio/Mobile3/DailyQuotes/servi
  NOTE: Return data type is json
 ******************************************************/
 function runServiceData(page, para, callBackFunction){
+	$.mobile.loading( 'show');
 	$.ajax({  
 		type: "GET",  
 		url: serviceURL+page,  
@@ -11,6 +12,7 @@ function runServiceData(page, para, callBackFunction){
 		dataType: "json",  
 		success: function(data){  
 			callBackFunction(data);
+			$.mobile.loading( "hide" );
 		},
 		error: function(jqXHR, exception) {
 			if (jqXHR.status === 0) {

@@ -4,8 +4,8 @@
 $(document).ready(function(){
 	$("#qMessage").html("Display a quote here... Coming soon...");
 
-	$("#prevTrigger").click(function () { 
-		$("#qMessage").html("Getting previous quote... coming soon...");
+	$("#prevTrigger").click(function () {  
+		$("#qMessage").html("Getting previous quote... coming soon..."); 
     });
 	$("#nextTrigger").click(function () { 
 		//$("#qMessage").html("Getting next quote... coming soon...");
