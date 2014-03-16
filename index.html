@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Daily Quotes</title>
+ 
+	<link rel="stylesheet" href="js/colorCandy/themes/ColorCandyV2.min.css" />
+	<link rel="stylesheet" href="js/colorCandy/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>  
+	
+	<script src="js/initService.js"></script>
+	<script src="js/home.js"></script>
+</head> 
+<body>
+<div data-role="page" data-control-title="Index" id="home" data-theme="a" >
+    <div data-role="header" data-position="fixed">
+        <h3>Daily Quotes</h3>
+    </div > 
+    <div data-role="content" >
+    	<p id="qMessage"></p>  
+    </div> 
+    <div id="appFooter" data-id="footer" data-role="footer" data-position="fixed" >
+		<div data-role="navbar">
+			<ul>
+				<li>
+					<a href="javascript:void(0)" id="prevTrigger" data-role="button" data-transition="fade" data-icon="arrow-l" data-iconpos="right" data-inline="true" >
+						Wait, I'm still reading!
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" id="nextTrigger" data-role="button" data-transition="fade" data-icon="arrow-r" data-iconpos="right" data-inline="true" >
+						More!
+					</a>
+				</li>
+			</ul>
+		</div> 
+	</div>  
+</div>
+</body>
+</html>
